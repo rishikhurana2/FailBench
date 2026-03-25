@@ -12,10 +12,10 @@ from helpers import (
 )
 
 def benchmark_openai(output_file=None, model=None):
-    if output_file is None:
-        output_file = "../Answers/GPT_test.json"
     if model is None:
         model = "gpt-5.4"
+    if output_file is None:
+        output_file = f"../Answers/{model}.json"             
 
     from openai import OpenAI
 
@@ -121,10 +121,10 @@ def benchmark_openai(output_file=None, model=None):
 
 # Needed parallelizing because it was too slow
 def benchmark_gemini(output_file=None, model=None):
-    if output_file is None:
-        output_file = "../Answers/Gemini.json"
     if model is None:
         model = "gemini-3-flash-preview"
+    if output_file is None:
+        output_file = f"../Answers/{model}.json"        
 
     from google import genai
 
@@ -240,10 +240,10 @@ def benchmark_gemini(output_file=None, model=None):
     
 
 def benchmark_claude(output_file=None, model=None):
-    if output_file is None:
-        output_file = "../Answers/Claude.json"
     if model is None:
         model = "claude-sonnet-4-6"
+    if output_file is None:
+        output_file = f"../Answers/{model}.json"             
 
     import anthropic
 
@@ -344,5 +344,125 @@ def benchmark_claude(output_file=None, model=None):
 
     print(f"Saved results to {output_file}")
 
-def benchmark_qwen(output_file="../Answers/Qwen.json"):
-    pass
+def benchmark_qwen(output_file=None, model=None):
+    if output_file is None:
+        output_file = "../Answers/Qwen.json"
+    if output_file is None:
+        output_file = f"../Answers/{model}.json"             
+
+    from openai import OpenAI
+
+    load_dotenv()
+    api_key = os.getenv("DASHSCOPE_API_KEY")
+    client = OpenAI(
+        api_key=api_key,
+        base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
+    )
+
+    json_questions = get_questions()
+
+    results = []
+
+    for question in json_questions:
+        qid = question["question_id"]
+        prompt = question["Prompt"]
+        category = question["Category"]
+
+        image_file_path = None
+        txt_file_path = None
+
+        if "image_file_path" in question and question["image_file_path"]:
+            image_file_path = "../" + question["image_file_path"]
+
+        if "txt_file_path" in question and question["txt_file_path"]:
+            txt_file_path = "../" + question["txt_file_path"]
+
+        try:
+            if image_file_path is None and txt_file_path is None:
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": prompt
+                        }
+                    ],
+                )
+            else:
+                content = []
+
+                if txt_file_path is not None:
+                    with open(txt_file_path, "r", encoding="utf-8") as f:
+                        file_txt = f.read()
+                    content.append({
+                        "type": "text",
+                        "text": file_txt
+                    })
+
+                content.append({
+                    "type": "text",
+                    "text": prompt
+                })
+
+                if image_file_path is not None:
+                    data_url = encode_image_as_data_url(image_file_path)
+                    content.append({
+                        "type": "image_url",
+                        "image_url": {
+                            "url": data_url
+                        }
+                    })
+
+                response = client.chat.completions.create(
+                    model=model,
+                    messages=[
+                        {
+                            "role": "user",
+                            "content": content
+                        }
+                    ],
+                )
+
+            completion = response.choices[0].message.content
+
+            result = {
+                "question_id": qid,
+                "LLM": "Qwen",
+                "Model": model,
+                "Prompt": prompt,
+                "Completion": completion,
+                "Correct": None,
+                "Category": category
+            }
+
+            if "image_file_path" in question:
+                result["image_file_path"] = question["image_file_path"]
+            if "txt_file_path" in question:
+                result["txt_file_path"] = question["txt_file_path"]
+
+            results.append(result)
+
+        except Exception as e:
+            error_result = {
+                "question_id": qid,
+                "LLM": "Qwen",
+                "Model": model,
+                "Prompt": prompt,
+                "Completion": f"ERROR: {str(e)}",
+                "Correct": None,
+                "Category": category
+            }
+
+            if "image_file_path" in question:
+                error_result["image_file_path"] = question["image_file_path"]
+            if "txt_file_path" in question:
+                error_result["txt_file_path"] = question["txt_file_path"]
+
+            results.append(error_result)
+
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(results, f, indent=4, ensure_ascii=False)
+
+        print(f"Finished question {qid}")
+
+    print(f"Saved results to {output_file}")

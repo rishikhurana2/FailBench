@@ -44,10 +44,7 @@ def main():
     model        = args.model
     output_file  = args.output
 
-    if output_file:
-        benchmark_fn(output_file=output_file, model=model)
-    else:
-        benchmark_fn()
+    benchmark_fn(output_file=output_file, model=model)
 
 
 if __name__ == "__main__":
