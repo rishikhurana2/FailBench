@@ -22,6 +22,7 @@ OPENAI_API_KEY, GEMINI_API_KEY, ANTHROPIC_API_KEY, DASHSCOPE_API_KEY
 
 (DASHSCOPE_API_KEY is for Qwen)
 
+Then, run the following:
 ```bash
 cd src
 python3 main.py --llm [llm] --output [file location]
