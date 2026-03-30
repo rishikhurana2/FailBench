@@ -12,7 +12,7 @@ The src folder contains the src code that runs the questions.json file against s
 cd FailBench
 python3 -m venv .venv
 source .venv/bin/activate
-pip install -r requirements.txt
+pip install -r src/requirements.txt
 ```
 
 ## Run the benchmarks
