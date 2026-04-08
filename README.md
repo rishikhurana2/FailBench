@@ -31,12 +31,9 @@ LLMs supported as of now are chatgpt, gemini, claude, and qwen. The output flag 
 
 The model flag specifies an API name for a model under the selected LLM. There are default models:
 
-ChatGPT: gpt-5.4
-
-Gemini: gemini-3-flash-preview
-
-Claude: claude-sonnet-4-6
-
+ChatGPT: gpt-5.4\
+Gemini: gemini-3-flash-preview\
+Claude: claude-sonnet-4-6\
 Qwen: qwen-vl-plus
 
 Ensure to reference API documentations if you wish to change the models (and ensure use the API names).
