@@ -25,9 +25,16 @@ OPENAI_API_KEY, GEMINI_API_KEY, ANTHROPIC_API_KEY, DASHSCOPE_API_KEY
 Then, run the following:
 ```bash
 cd src
-python3 main.py --llm [llm] --output [file location]
+python3 main.py --llm [llm] --output [file location] --model [model]
 ```
-LLMs supported as of now are chatgpt, gemini, claude, and qwen. The output flag is optional and only specify it if you do not want to save benchmark outputs in the default directory.
+LLMs supported as of now are chatgpt, gemini, claude, and qwen. The output flag is optional and only specify it if you do not want to save benchmark outputs in the default directory. The model flag specifies an API name for a model under the selected LLM. There are default models:
+
+ChatGPT: gpt-5.4
+Gemini: gemini-3-flash-preview
+Claude: claude-sonnet-4-6
+Qwen: qwen-vl-plus
+
+Ensure to reference API documentations if you wish to change the models (and ensure use the API names).
 
 Ensure you have a FailBench/Answers folder to store the output of the benchmarks. If you want to store the answers elsewhere, be sure to add an argument for the --output flag.
 
