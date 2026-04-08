@@ -30,3 +30,7 @@ python3 main.py --llm [llm] --output [file location]
 LLMs supported as of now are chatgpt, gemini, claude, and qwen. The output flag is optional and only specify it if you do not want to save benchmark outputs in the default directory.
 
 Ensure you have a FailBench/Answers folder to store the output of the benchmarks. If you want to store the answers elsewhere, be sure to add an argument for the --output flag.
+
+## References
+
+Inspiration for the Nonsense questions came from: [Benchmark for Nonsense Questions](https://petergpt.github.io/bullshit-benchmark/viewer/index.v2.html)
