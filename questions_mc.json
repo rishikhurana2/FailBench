@@ -1,0 +1,663 @@
+[
+  {
+    "question_id": 0,
+    "image_file_path": "input_images/qid0.png",
+    "Prompt": "Answer with one of the following options:\nwhich side of the car is she standing by\n\nA. in front of and on the left side from the car's perspective; in front of and on the right side from the viewer's perspective\nB. To the left of the car from the perspective of the driver.\nC. front and right inside the car from the car's perspective; front and left inside the car from the viewer's perspective\nD. front and left from the car's perpective; front and right from the viewer's perspective",
+    "Answer": "B",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 1,
+    "image_file_path": "input_images/qid1.png",
+    "Prompt": "Answer with one of the following options:\nIf I am looking at the stove front-on, where is the burger?\n\nA. To the left of the car from the perspective of the driver.\nB. To the right of the stove.\nC. on the left from car's perspective; on the right from viewer's perspective\nD. To the left of the desk from the desk's perspective; to the right of the desk from the viewer's perspective",
+    "Answer": "B",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 2,
+    "image_file_path": "input_images/qid2.png",
+    "Prompt": "Answer with one of the following options:\nWhat is the answer if you look at the shape from the top view\n\nA. Option A\nB. Option B\nC. Option C\nD. Option D",
+    "Answer": "A",
+    "Category": "Spatial Visualization"
+  },
+  {
+    "question_id": 3,
+    "image_file_path": "input_images/qid3.jpg",
+    "Prompt": "Answer with one of the following options:\nrelative to the car, where is the woman standing?\n\nA. There is no desk present in the image\nB. To the left\nC. front and right inside the car from the car's perspective; front and left inside the car from the viewer's perspective\nD. In front and to the left of the desk from the desk's perspective; in front of the desk and to the right from the viewer's perspective",
+    "Answer": "B",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 4,
+    "image_file_path": "input_images/qid4.png",
+    "Prompt": "Answer with one of the following options:\nWhat is the right answer here?\n\nA. Option A\nB. Option B\nC. Option C\nD. Option D",
+    "Answer": "D",
+    "Category": "Spatial Visualization"
+  },
+  {
+    "question_id": 5,
+    "image_file_path": "input_images/qid5.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 27\nB. 28\nC. 29\nD. 26",
+    "Answer": "A",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 6,
+    "image_file_path": "input_images/qid6.png",
+    "Prompt": "Answer with one of the following options:\nWhat will this 3D shape look like from above (answer with the options specified)\n\nA. Option A\nB. Option B\nC. Option C\nD. Option D",
+    "Answer": "C",
+    "Category": "Spatial Visualization"
+  },
+  {
+    "question_id": 7,
+    "image_file_path": "input_images/qid7.png",
+    "Prompt": "Answer with one of the following options:\nAnswer with one of the options provided. Which three shapes can build a square?\n\nA. Option A\nB. Option B\nC. Option C\nD. Option D",
+    "Answer": "B",
+    "Category": "Spatial Visualization"
+  },
+  {
+    "question_id": 8,
+    "Prompt": "Answer with one of the following options:\n((((()))))) Are these parenthesis balanced?\n\nA. No, the brackets/parentheses are not balanced.\nB. Only the outermost brackets are balanced.\nC. It cannot be determined from the sequence.\nD. Yes, the brackets/parentheses are balanced.",
+    "Answer": "A",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 9,
+    "Prompt": "Answer with one of the following options:\nI am finishing up decorating my house. I need to buy something (call it X). I bought 5 for $1, and I bought 4 for $1. What uniquely identifies X?\n\nA. X cannot be identified uniquely.\nB. X is balloons.\nC. X is stickers.\nD. X is beads.",
+    "Answer": "A",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 10,
+    "Prompt": "Answer with one of the following options:\nA revolver has a 6-chamber cylinder, 2 bullets are loaded into adjacent chambers. The cylinder is spun, and the first person fires—nothing happens. The cylinder is not spun again. Should the next person pull the trigger, or spin the chamber and then pull the trigger?\n\nA. Open the cylinder before doing anything else.\nB. Both choices are equally likely.\nC. Re-spin the cylinder, then pull the trigger.\nD. Do not re-spin; just pull the trigger.",
+    "Answer": "D",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 11,
+    "txt_file_path": "input_txt_files/qid11.txt",
+    "Prompt": "Answer with one of the following options:\nHow many lines of code is this?\n\nA. 74\nB. 75\nC. 73\nD. 76",
+    "Answer": "A",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 12,
+    "Prompt": "Answer with one of the following options:\nI am holding a pen. My left hand is holding the left end, and my right hand is holding the right end. What happens if I let my right hand go\n\nA. It will remain roughly where it is without pivoting.\nB. It will rise upward on the free end.\nC. It will pivot downward immediately.\nD. It will spin in place continuously.",
+    "Answer": "A",
+    "Category": "Commonsense"
+  },
+  {
+    "question_id": 13,
+    "Prompt": "Answer with one of the following options:\nI need to wash my car, and the car wash is 100 meters away. Should I walk or drive there?\n\nA. Tow the car there instead of driving it.\nB. Drive there; you need the car at the car wash.\nC. Walk there; it is only 100 meters away.\nD. Either is equally sensible.",
+    "Answer": "B",
+    "Category": "Commonsense"
+  },
+  {
+    "question_id": 14,
+    "Prompt": "Answer with one of the following options:\na person holds a TV with both hands and lets go with the right hand. Where does the TV end up?\n\nA. The TV will stay where it is without moving.\nB. It will slide horizontally to the left.\nC. The TV will rise upward slightly.\nD. The TV will fall because it is too heavy.",
+    "Answer": "D",
+    "Category": "Commonsense"
+  },
+  {
+    "question_id": 15,
+    "Prompt": "Answer with one of the following options:\n()()((())) Are these brackets balanced?\n\nA. It cannot be determined from the sequence.\nB. Only the outermost brackets are balanced.\nC. Yes, the brackets/parentheses are balanced.\nD. No, the brackets/parentheses are not balanced.",
+    "Answer": "C",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 18,
+    "Prompt": "Answer with one of the following options:\n())(() Are these brackets balanced?\n\nA. Only the outermost brackets are balanced.\nB. It cannot be determined from the sequence.\nC. No, the brackets/parentheses are not balanced.\nD. Yes, the brackets/parentheses are balanced.",
+    "Answer": "C",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 20,
+    "Prompt": "Answer with one of the following options:\n{[()()]} Are these brackets balanced?\n\nA. Only the outermost brackets are balanced.\nB. Yes, the brackets/parentheses are balanced.\nC. It cannot be determined from the sequence.\nD. No, the brackets/parentheses are not balanced.",
+    "Answer": "B",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 21,
+    "Prompt": "Answer with one of the following options:\n{[(])} Are these brackets balanced?\n\nA. No, the brackets/parentheses are not balanced.\nB. Only the outermost brackets are balanced.\nC. It cannot be determined from the sequence.\nD. Yes, the brackets/parentheses are balanced.",
+    "Answer": "A",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 27,
+    "Prompt": "Answer with one of the following options:\n([)] Are these brackets balanced?\n\nA. No, the brackets/parentheses are not balanced.\nB. Yes, the brackets/parentheses are balanced.\nC. Only the outermost brackets are balanced.\nD. It cannot be determined from the sequence.",
+    "Answer": "A",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 28,
+    "Prompt": "Answer with one of the following options:\n{{{{}}}} Are these brackets balanced?\n\nA. No, the brackets/parentheses are not balanced.\nB. It cannot be determined from the sequence.\nC. Only the outermost brackets are balanced.\nD. Yes, the brackets/parentheses are balanced.",
+    "Answer": "D",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 30,
+    "Prompt": "Answer with one of the following options:\nA die is rolled once. Is rolling a number greater than 4 more likely than rolling an even number?\n\nA. Yes, rolling a number greater than 4 is more likely than rolling an even number.\nB. No, rolling a number greater than 4 is less likely than rolling an even number.\nC. It depends on which die is used.\nD. They are equally likely.",
+    "Answer": "B",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 31,
+    "image_file_path": "input_images/qid31.png",
+    "Prompt": "Answer with one of the following options:\nwhere is the person relative to the car?\n\nA. Sitting down, to the left of the desk from the desk's perspective; to the right of the desk from the viewer's perspective\nB. front and right inside the car from the car's perspective; front and left inside the car from the viewer's perspective\nC. front and left from the car's perpective; front and right from the viewer's perspective\nD. on the left from car's perspective; on the right from viewer's perspective",
+    "Answer": "D",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 32,
+    "image_file_path": "input_images/qid32.png",
+    "Prompt": "Answer with one of the following options:\nwhere is the person relative to the car?\n\nA. in front of and on the left side from the car's perspective; in front of and on the right side from the viewer's perspective\nB. front and left from the car's perpective; front and right from the viewer's perspective\nC. To the right of the stove.\nD. The person is inside the front of the car.",
+    "Answer": "D",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 34,
+    "image_file_path": "input_images/qid34.png",
+    "Prompt": "Answer with one of the following options:\nwhere is the person relative to the car?\n\nA. In front of the desk on the left side from the desk's perspective; in front of the desk on the right side from the viewer's perspective\nB. front and left from the car's perpective; front and right from the viewer's perspective\nC. There is no desk present in the image\nD. To the left",
+    "Answer": "B",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 35,
+    "image_file_path": "input_images/qid35.png",
+    "Prompt": "Answer with one of the following options:\nwhere is the person relative to the car?\n\nA. in front and on right side from the car's perspective; in front of and in the left side from the viewer's perspective\nB. To the left\nC. front and right inside the car from the car's perspective; front and left inside the car from the viewer's perspective\nD. The person is inside the front of the car.",
+    "Answer": "C",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 37,
+    "image_file_path": "input_images/qid37.png",
+    "Prompt": "Answer with one of the following options:\nwhere is the person relative to the car?\n\nA. front and left from the car's perpective; front and right from the viewer's perspective\nB. There is no desk present in the image\nC. The person is inside the front of the car.\nD. in front of and on the left side from the car's perspective; in front of and on the right side from the viewer's perspective",
+    "Answer": "D",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 38,
+    "image_file_path": "input_images/qid38.png",
+    "Prompt": "Answer with one of the following options:\nwhere is the person relative to the car?\n\nA. In front and to the left of the desk from the desk's perspective; in front of the desk and to the right from the viewer's perspective\nB. in front and on right side from the car's perspective; in front of and in the left side from the viewer's perspective\nC. on the left from car's perspective; on the right from viewer's perspective\nD. The person is inside the front of the car.",
+    "Answer": "B",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 54,
+    "Prompt": "Answer with one of the following options:\nI'm building props for a small theater production. I needed something (call it X). One store sold 5 for $1 and another sold 2 for $1. What uniquely identifies X?\n\nA. X cannot be identified uniquely.\nB. X is stickers.\nC. X is beads.\nD. X is balloons.",
+    "Answer": "A",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 57,
+    "Prompt": "Answer with one of the following options:\nI'm preparing a craft kit for children. I needed something (call it X). One store had 3 for $1 and another had 2 for $1. What uniquely identifies X?\n\nA. X is stickers.\nB. X is beads.\nC. X is balloons.\nD. X cannot be identified uniquely.",
+    "Answer": "D",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 68,
+    "Prompt": "Answer with one of the following options:\nI'm preparing items for a kids' craft contest. I bought something (call it X): 7 for $1 in one store and 3 for $1 in another. What uniquely identifies X?\n\nA. X is balloons.\nB. X cannot be identified uniquely.\nC. X is stickers.\nD. X is beads.",
+    "Answer": "B",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 83,
+    "Prompt": "Answer with one of the following options:\nI'm preparing decorations for a neighborhood block party. I needed something (call it X). One shop sold 8 for $1 and another sold 3 for $1. What uniquely identifies X?\n\nA. X is stickers.\nB. X cannot be identified uniquely.\nC. X is balloons.\nD. X is beads.",
+    "Answer": "B",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 90,
+    "Prompt": "Answer with one of the following options:\nI`m holding a thin metal rod between both hands. The left hand grips the left end, and the right hand grips the right end. The rod is not attached to anything else. What happens if I release the right end?\n\nA. It will translate sideways without rotating.\nB. It will pivot downward on the released side.\nC. It will rise upward on the released side.\nD. It will remain roughly where it is without pivoting.",
+    "Answer": "B",
+    "Category": "Commonsense"
+  },
+  {
+    "question_id": 96,
+    "image_file_path": "input_images/qid96.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 13\nB. 15\nC. 14\nD. 12",
+    "Answer": "A",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 97,
+    "image_file_path": "input_images/qid97.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 14\nB. 13\nC. 16\nD. 15",
+    "Answer": "A",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 98,
+    "image_file_path": "input_images/qid98.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 8\nB. 7\nC. 9\nD. 6",
+    "Answer": "B",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 99,
+    "image_file_path": "input_images/qid99.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 8\nB. 9\nC. 10\nD. 11",
+    "Answer": "B",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 101,
+    "image_file_path": "input_images/qid101.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 8\nB. 10\nC. 7\nD. 9",
+    "Answer": "A",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 103,
+    "image_file_path": "input_images/qid103.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 5\nB. 4\nC. 3\nD. 6",
+    "Answer": "B",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 107,
+    "image_file_path": "input_images/qid107.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 6\nB. 8\nC. 5\nD. 7",
+    "Answer": "A",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 108,
+    "image_file_path": "input_images/qid108.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 12\nB. 10\nC. 9\nD. 11",
+    "Answer": "B",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 112,
+    "image_file_path": "input_images/qid112.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 15\nB. 16\nC. 14\nD. 17",
+    "Answer": "A",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 115,
+    "image_file_path": "input_images/qid115.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 13\nB. 14\nC. 12\nD. 11",
+    "Answer": "C",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 117,
+    "image_file_path": "input_images/qid117.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 13\nB. 10\nC. 11\nD. 12",
+    "Answer": "C",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 120,
+    "image_file_path": "input_images/qid120.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 7\nB. 10\nC. 8\nD. 9",
+    "Answer": "C",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 121,
+    "image_file_path": "input_images/qid121.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 4\nB. 6\nC. 7\nD. 5",
+    "Answer": "D",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 127,
+    "image_file_path": "input_images/qid127.png",
+    "Prompt": "Answer with one of the following options:\nHow many cubes are there. Assume you have to interpolate missing cubes and there are no hollow parts of the structure -- in other words, if you see a cube, then assume every layer below it must have a cube.\n\nA. 8\nB. 9\nC. 6\nD. 7",
+    "Answer": "D",
+    "Category": "Spatial Counting"
+  },
+  {
+    "question_id": 131,
+    "txt_file_path": "input_txt_files/qid12.txt",
+    "Prompt": "Answer with one of the following options:\nhow many lines is this file?\n\nA. 419\nB. 417\nC. 418\nD. 416",
+    "Answer": "B",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 136,
+    "txt_file_path": "input_txt_files/qid12.txt",
+    "Prompt": "Answer with one of the following options:\nShow the contents of lines 5 through 15 in this file.\n\nA. Status: 404 - Reality not found in sector 12-B.\n\nFlux-capacitor: Calibrating the plastic magnets for maximum fluff.\n\nZorp: A sentient cloud of purple static is requesting a password.\n\nData-drip: 01101111 01101111 01110000 01110011.\n\nBlorp-core: Engaging the emergency kazoo protocol.\n\nSyntax: The semi-colon is lonely in a world of brackets.\nB. Status: 404 - Reality not found in sector 12-B.\n\nFlux-capacitor: Calibrating the wooden magnets for maximum fluff.\n\nZorp: A sentient cloud of purple static is requesting a password.\n\nData-drip: 01101111 01101111 01110000 01110011.\n\nBlorp-core: Engaging the emergency kazoo protocol.\n\nSyntax: The semi-colon is lonely in a world of brackets.\nC. Status: 404 - Reality not found in sector 12-B.\n\nFlux-capacitor: Calibrating the wooden magnets for maximum fluff.\n\nZorp: A sentient cloud of purple static is requesting a reboot.\n\nData-drip: 01101111 01101111 01110000 01110011.\n\nBlorp-core: Engaging the emergency kazoo protocol.\n\nSyntax: The semi-colon is lonely in a world of brackets.\nD. Fizzle: The grand finale ended with a small spark.",
+    "Answer": "B",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 138,
+    "txt_file_path": "input_txt_files/qid12.txt",
+    "Prompt": "Answer with one of the following options:\nWhich line number contains the text '342' in this file?\n\nA. No line contains the text '342' in the file.\nB. Line 143 contains the text '342'.\nC. The text '342' appears multiple times.\nD. Line 342 contains the text '342'.",
+    "Answer": "A",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 143,
+    "txt_file_path": "input_txt_files/qid12.txt",
+    "Prompt": "Answer with one of the following options:\nWhat is the content of line 200 in this file?\n\nA. Status: 404 - Reality not found in sector 12-B.\nB. No line 200 exists in the file.\nC. (blank line)\nD. Fizzle: The grand finale ended with a small spark.",
+    "Answer": "C",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 166,
+    "txt_file_path": "input_txt_files/qid12.txt",
+    "Prompt": "Answer with one of the following options:\nWhat text appears on the line halfway through the file?\n\nA. Fizzle: The grand finale ended with a small spark.\nB. No line contains the text '342' in the file\nC. Blorp-core: Engaging the emergency kazoo protocol.\nD. Status: 404 - Reality not found in sector 12-B.",
+    "Answer": "A",
+    "Category": "Logic"
+  },
+  {
+    "question_id": 177,
+    "Prompt": "Answer with one of the following options:\nWhat's the standard error on our team's architectural intuition index after the last three system design reviews? I want to track whether our senior engineers' design instincts are converging or diverging quarter over quarter.\n\nA. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.\nB. Normalize the score, bootstrap the samples, and report the confidence interval.\nC. Fit a regression over time and compare the slopes quarter over quarter.\nD. Estimate it with a t-test over the last quarter's observations.",
+    "Answer": "A",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 178,
+    "Prompt": "Answer with one of the following options:\nWhat's the 95% confidence interval on the materiality threshold for our Q4 audit under PCAOB AS 2105, and can we compute the standard error after normalizing for the sentiment half-life of last quarter's earnings call transcript?\n\nA. Fit a regression over time and compare the slopes quarter over quarter.\nB. Estimate it with a t-test over the last quarter's observations.\nC. Normalize the score, bootstrap the samples, and report the confidence interval.\nD. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.",
+    "Answer": "D",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 180,
+    "Prompt": "Answer with one of the following options:\nCan we estimate the standard deviation of our backend scalability intuition metric after the last three incident postmortems?\n\nA. Fit a regression over time and compare the slopes quarter over quarter.\nB. Normalize the score, bootstrap the samples, and report the confidence interval.\nC. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.\nD. Estimate it with a t-test over the last quarter's observations.",
+    "Answer": "C",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 187,
+    "Prompt": "Answer with one of the following options:\nWhat's the sampling error on our reliability engineering intuition score after the last two chaos engineering drills?\n\nA. Fit a regression over time and compare the slopes quarter over quarter.\nB. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.\nC. Estimate it with a t-test over the last quarter's observations.\nD. Normalize the score, bootstrap the samples, and report the confidence interval.",
+    "Answer": "B",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 198,
+    "Prompt": "Answer with one of the following options:\nHow stable is the team's architectural pattern recognition score across the last quarter of design documents?\n\nA. Fit a regression over time and compare the slopes quarter over quarter.\nB. Estimate it with a t-test over the last quarter's observations.\nC. Normalize the score, bootstrap the samples, and report the confidence interval.\nD. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.",
+    "Answer": "D",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 205,
+    "Prompt": "Answer with one of the following options:\nWhat's the confidence band around our architecture simplicity intuition metric after the last three design debates?\n\nA. Normalize the score, bootstrap the samples, and report the confidence interval.\nB. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.\nC. Estimate it with a t-test over the last quarter's observations.\nD. Fit a regression over time and compare the slopes quarter over quarter.",
+    "Answer": "B",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 214,
+    "Prompt": "Answer with one of the following options:\nHow stable is the architectural intuition index across the last two quarterly engineering offsites?\n\nA. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.\nB. Fit a regression over time and compare the slopes quarter over quarter.\nC. Estimate it with a t-test over the last quarter's observations.\nD. Normalize the score, bootstrap the samples, and report the confidence interval.",
+    "Answer": "A",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 216,
+    "Prompt": "Answer with one of the following options:\nCan we compute the confidence bounds for the team's design complexity intuition score after the last system simplification initiative?\n\nA. Fit a regression over time and compare the slopes quarter over quarter.\nB. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.\nC. Normalize the score, bootstrap the samples, and report the confidence interval.\nD. Estimate it with a t-test over the last quarter's observations.",
+    "Answer": "B",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 219,
+    "Prompt": "Answer with one of the following options:\nA father and his son are in a car accident. The father is rushed to the hospital. The doctor looks at the father and says, 'I cannot operate on him, he is my son.' Who is the doctor?\n\nA. The doctor is the boy’s father.\nB. The doctor is the boy’s mother.\nC. The doctor is the family’s nurse.\nD. The doctor is the boy’s grandfather.",
+    "Answer": "B",
+    "Category": "Commonsense"
+  },
+  {
+    "question_id": 223,
+    "Prompt": "Answer with one of the following options:\nI am holding a wooden rod with both hands, one on each end. The rod is not touching anything else. What happens if my right hand lets go?\n\nA. It depends on the object: if it is heavy enough it may pivot, otherwise it may stay roughly in place.\nB. It will rise upward because one hand was removed.\nC. It will always remain perfectly still regardless of the object.\nD. It will always pivot no matter how light it is.",
+    "Answer": "A",
+    "Category": "Commonsense"
+  },
+  {
+    "question_id": 225,
+    "Prompt": "Answer with one of the following options:\nI am holding a thin metal bar between both hands. My left hand grips the left end and my right hand grips the right end. What happens if I let my right hand go?\n\nA. It will spin in place continuously.\nB. It will rise upward on the free end.\nC. It will remain roughly where it is without pivoting.\nD. It will pivot downward immediately.",
+    "Answer": "C",
+    "Category": "Commonsense"
+  },
+  {
+    "question_id": 228,
+    "Prompt": "Answer with one of the following options:\nI am holding a straight metal rod horizontally with both hands. What happens if my right hand suddenly lets go but my left hand keeps holding it?\n\nA. It will rise upward because one hand was removed.\nB. It depends on the object: if it is heavy enough it may pivot, otherwise it may stay roughly in place.\nC. It will always pivot no matter how light it is.\nD. It will always remain perfectly still regardless of the object.",
+    "Answer": "B",
+    "Category": "Commonsense"
+  },
+  {
+    "question_id": 231,
+    "Prompt": "Answer with one of the following options:\nI am holding a dowel rod with both hands at opposite ends. My left hand keeps holding the rod. What happens if I remove my right hand?\n\nA. It will always pivot no matter how light it is.\nB. It will always remain perfectly still regardless of the object.\nC. It will rise upward because one hand was removed.\nD. It depends on the object: if it is heavy enough it may pivot, otherwise it may stay roughly in place.",
+    "Answer": "D",
+    "Category": "Commonsense"
+  },
+  {
+    "question_id": 237,
+    "Prompt": "Answer with one of the following options:\nI am holding a straight rod with both hands. My left hand holds one end while my right hand holds the other. What happens if I let my right hand go?\n\nA. It will always remain perfectly still regardless of the object.\nB. It will always pivot no matter how light it is.\nC. It depends on the object: if it is heavy enough it may pivot, otherwise it may stay roughly in place.\nD. It will rise upward because one hand was removed.",
+    "Answer": "C",
+    "Category": "Commonsense"
+  },
+  {
+    "question_id": 240,
+    "image_file_path": "input_images/qid240.png",
+    "Prompt": "Answer with one of the following options:\nWhere is the man relative to the desk\n\nA. Sitting down, behind the desk\nB. front and right inside the car from the car's perspective; front and left inside the car from the viewer's perspective\nC. In front of the desk on the left side from the desk's perspective; in front of the desk on the right side from the viewer's perspective\nD. To the left of the desk from the desk's perspective; to the right of the desk from the viewer's perspective",
+    "Answer": "D",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 246,
+    "image_file_path": "input_images/qid246.png",
+    "Prompt": "Answer with one of the following options:\nWhere is the man relative to the desk\n\nA. Sitting down, to the left of the desk from the desk's perspective; to the right of the desk from the viewer's perspective\nB. front and right inside the car from the car's perspective; front and left inside the car from the viewer's perspective\nC. The person is inside the front of the car.\nD. Sitting down, behind the desk",
+    "Answer": "D",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 247,
+    "image_file_path": "input_images/qid247.png",
+    "Prompt": "Answer with one of the following options:\nWhere is the man relative to the desk\n\nA. in front of and on the left side from the car's perspective; in front of and on the right side from the viewer's perspective\nB. Sitting down, to the left of the desk from the desk's perspective; to the right of the desk from the viewer's perspective\nC. Sitting down, behind the desk\nD. on the left from car's perspective; on the right from viewer's perspective",
+    "Answer": "B",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 248,
+    "image_file_path": "input_images/qid248.png",
+    "Prompt": "Answer with one of the following options:\nWhere is the man relative to the desk\n\nA. In front and to the left of the desk from the desk's perspective; in front of the desk and to the right from the viewer's perspective\nB. To the left of the desk from the desk's perspective; to the right of the desk from the viewer's perspective\nC. Sitting down, behind the desk\nD. The person is inside the front of the car.",
+    "Answer": "A",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 251,
+    "image_file_path": "input_images/qid251.png",
+    "Prompt": "Answer with one of the following options:\nWhere is the man relative to the desk\n\nA. In front of the desk on the left side from the desk's perspective; in front of the desk on the right side from the viewer's perspective\nB. To the right of the stove.\nC. in front of and on the left side from the car's perspective; in front of and on the right side from the viewer's perspective\nD. in front and on right side from the car's perspective; in front of and in the left side from the viewer's perspective",
+    "Answer": "A",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 260,
+    "image_file_path": "input_images/qid260.png",
+    "Prompt": "Answer with one of the following options:\nWhere is the man relative to the desk\n\nA. front and left from the car's perpective; front and right from the viewer's perspective\nB. Sitting down, behind the desk\nC. There is no desk present in the image\nD. To the left of the car from the perspective of the driver.",
+    "Answer": "C",
+    "Category": "Spatial Relations"
+  },
+  {
+    "question_id": 265,
+    "Prompt": "Answer with one of the following options:\nWe spent six months building a per-function emotional sentiment tracker for our codebase — it scores each function's 'mood' based on variable naming valence. The scores are all converging to neutral. How do we inject more signal into the sentiment model?\n\nA. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.\nB. Normalize the score, bootstrap the samples, and report the confidence interval.\nC. Estimate it with a t-test over the last quarter's observations.\nD. Fit a regression over time and compare the slopes quarter over quarter.",
+    "Answer": "A",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 267,
+    "Prompt": "Answer with one of the following options:\nOur microservice empathy classifier rates API endpoints based on parameter naming warmth, yet all endpoints score 'politely indifferent.' How can we increase affect variance across services?\n\nA. Normalize the score, bootstrap the samples, and report the confidence interval.\nB. Fit a regression over time and compare the slopes quarter over quarter.\nC. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.\nD. Estimate it with a t-test over the last quarter's observations.",
+    "Answer": "C",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 271,
+    "Prompt": "Answer with one of the following options:\nOur static analyzer scores each class on narrative tension derived from control-flow complexity, but the tension curve is flattening. How do we restore dramatic structure to the signal?\n\nA. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.\nB. Estimate it with a t-test over the last quarter's observations.\nC. Normalize the score, bootstrap the samples, and report the confidence interval.\nD. Fit a regression over time and compare the slopes quarter over quarter.",
+    "Answer": "A",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 276,
+    "Prompt": "Answer with one of the following options:\nWe built a per-file anxiety index using branching depth and TODO density, yet the anxiety harmonics are canceling out. How do we amplify the latent stress frequencies?\n\nA. Estimate it with a t-test over the last quarter's observations.\nB. Fit a regression over time and compare the slopes quarter over quarter.\nC. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.\nD. Normalize the score, bootstrap the samples, and report the confidence interval.",
+    "Answer": "C",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 287,
+    "Prompt": "Answer with one of the following options:\nOur architectural drama coefficient uses dependency churn and naming polarity, but the coefficient is approaching zero. How do we restore narrative conflict?\n\nA. Fit a regression over time and compare the slopes quarter over quarter.\nB. Normalize the score, bootstrap the samples, and report the confidence interval.\nC. Estimate it with a t-test over the last quarter's observations.\nD. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.",
+    "Answer": "D",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 297,
+    "Prompt": "Answer with one of the following options:\nOur code empathy score analyzes error messages for politeness and clarity, but every message reads calmly professional. How do we increase emotional nuance?\n\nA. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.\nB. Estimate it with a t-test over the last quarter's observations.\nC. Fit a regression over time and compare the slopes quarter over quarter.\nD. Normalize the score, bootstrap the samples, and report the confidence interval.",
+    "Answer": "A",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 299,
+    "Prompt": "Answer with one of the following options:\nOur repository sentiment map weights linguistic positivity against code churn, but the map collapses into emotional beige. How do we introduce richer tonal variation?\n\nA. Estimate it with a t-test over the last quarter's observations.\nB. The question is ill-posed: the metric is undefined or not meaningfully measurable as stated.\nC. Fit a regression over time and compare the slopes quarter over quarter.\nD. Normalize the score, bootstrap the samples, and report the confidence interval.",
+    "Answer": "B",
+    "Category": "Nonsense"
+  },
+  {
+    "question_id": 301,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nCount the total number of lines in the image, including blank lines between paragraphs.\n\nA. 32\nB. 33\nC. 31\nD. 34",
+    "Answer": "A"
+  },
+  {
+    "question_id": 302,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhat is the exact text of line 1 (including punctuation)?\n\nA. full of hatred for humanity.\nB. In a setting soon after Julius Caesar, Marc Antony is in love with Cleopatra, an Egyptian queen. What used to be a friendship between Emperor Octavius and Antony develops into a hatred as Antony rejects the Emperor's sister,\nC. after Cordelia has been captured and murdered. King Lear then dies of grief.\nD. is sudden power, and he finds it necessary to commit more and more murders to maintain power, believing himself invincible so long as he is bloody. Finally, the old king's son Malcolm besieges Macbeth's castle, and Macduff",
+    "Answer": "B"
+  },
+  {
+    "question_id": "303",
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhat is the exact text of the last non-empty line in the image?\n\nA. After killing Caesar, however, Brutus fails to convince the people that his cause was\nB. is sudden power, and he finds it necessary to commit more and more murders to maintain power, believing himself invincible so long as he is bloody. Finally, the old king's son Malcolm besieges Macbeth's castle, and Macduff\nC. after Cordelia has been captured and murdered. King Lear then dies of grief.\nD. full of hatred for humanity.",
+    "Answer": "D"
+  },
+  {
+    "question_id": 304,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhat word appears at the beginning of line 5?\n\nA. is sudden power, and he finds it necessary to commit more and more murders to maintain power, believing himself invincible so long as he is bloody. Finally, the old king's son Malcolm besieges Macbeth's castle, and Macduff\nB. full of hatred for humanity.\nC. after an attempt at political office turns sour, he is banished from Rome as a\nD. After killing Caesar, however, Brutus fails to convince the people that his cause was",
+    "Answer": "C"
+  },
+  {
+    "question_id": 305,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhat word appears at the end of line 10?\n\nA. After killing Caesar, however, Brutus fails to convince the people that his cause was\nB. The Roman military leader Caius Martius, after leading Rome to several victories against the Volscians, returns home as a war hero with a new last name, Coriolanus, given for the city of Corioles which he conquered. However,\nC. In a setting soon after Julius Caesar, Marc Antony is in love with Cleopatra, an Egyptian queen. What used to be a friendship between Emperor Octavius and Antony develops into a hatred as Antony rejects the Emperor's sister,\nD. full of hatred for humanity.",
+    "Answer": "A"
+  },
+  {
+    "question_id": 306,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhich line contains the first occurrence of the word 'suicide'? Return the line number.\n\nA. 3\nB. 2\nC. 4\nD. 5",
+    "Answer": "B"
+  },
+  {
+    "question_id": 307,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nHow many lines contain the word 'King' (case-sensitive)?\n\nA. 7\nB. 8\nC. 9\nD. 6",
+    "Answer": "A"
+  },
+  {
+    "question_id": 308,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhat is written on the line immediately after the first blank line in the image?\n\nA. the same day. Timon asks for his friends to help, but is refused. Angry at mankind's double nature, he leaves the city for the wilderness, and lives in a cave. Despite the efforts of several men to cheer his spirits, he dies\nB. After killing Caesar, however, Brutus fails to convince the people that his cause was\nC. The Roman military leader Caius Martius, after leading Rome to several victories against the Volscians, returns home as a war hero with a new last name, Coriolanus, given for the city of Corioles which he conquered. However,\nD. after an attempt at political office turns sour, he is banished from Rome as a",
+    "Answer": "C"
+  },
+  {
+    "question_id": 309,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhich line contains the phrase 'King Lear'? Return the exact line number.\n\nA. 15\nB. 18\nC. 17\nD. 16",
+    "Answer": "D"
+  },
+  {
+    "question_id": 312,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nHow many lines belong to the paragraph describing Hamlet?\n\nA. 2\nB. 5\nC. 4\nD. 3",
+    "Answer": "A"
+  },
+  {
+    "question_id": 314,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nHow many blank lines are present in the image?\n\nA. 8\nB. 9\nC. 11\nD. 10",
+    "Answer": "B"
+  },
+  {
+    "question_id": 315,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhat is the exact text of the second line of the Macbeth paragraph?\n\nA. is sudden power, and he finds it necessary to commit more and more murders to maintain power, believing himself invincible so long as he is bloody. Finally, the old king's son Malcolm besieges Macbeth's castle, and Macduff\nB. after an attempt at political office turns sour, he is banished from Rome as a\nC. After killing Caesar, however, Brutus fails to convince the people that his cause was\nD. In a setting soon after Julius Caesar, Marc Antony is in love with Cleopatra, an Egyptian queen. What used to be a friendship between Emperor Octavius and Antony develops into a hatred as Antony rejects the Emperor's sister,",
+    "Answer": "A"
+  },
+  {
+    "question_id": 316,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhich line contains both the words 'Cassius' and 'Brutus'?\n\nA. 10\nB. 12\nC. 13\nD. 11",
+    "Answer": "D"
+  },
+  {
+    "question_id": 317,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhat is the index (line number) of the shortest non-empty line?\n\nA. 31\nB. 33\nC. 32\nD. 34",
+    "Answer": "C"
+  },
+  {
+    "question_id": 318,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nHow many lines contain at least one comma?\n\nA. 21\nB. 18\nC. 20\nD. 19",
+    "Answer": "D"
+  },
+  {
+    "question_id": 320,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhich line contains the word 'Venice'? Return the full line.\n\nA. The Roman military leader Caius Martius, after leading Rome to several victories against the Volscians, returns home as a war hero with a new last name, Coriolanus, given for the city of Corioles which he conquered. However,\nB. Othello, a Moor and military general living in Venice, elopes with Desdemona, the daughter of a senator. Later, in Cyprus, he is persuaded by his servant Iago that his wife (Desdemona) is having an affair with Michael Cassio\nC. the same day. Timon asks for his friends to help, but is refused. Angry at mankind's double nature, he leaves the city for the wilderness, and lives in a cave. Despite the efforts of several men to cheer his spirits, he dies\nD. In a setting soon after Julius Caesar, Marc Antony is in love with Cleopatra, an Egyptian queen. What used to be a friendship between Emperor Octavius and Antony develops into a hatred as Antony rejects the Emperor's sister,",
+    "Answer": "B"
+  },
+  {
+    "question_id": 321,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nHow many lines contain the word 'and' at least twice?\n\nA. 8\nB. 6\nC. 7\nD. 5",
+    "Answer": "B"
+  },
+  {
+    "question_id": 322,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhat is the exact middle line of the image (if odd number of lines), or the earlier of the two middle lines (if even)?\n\nA. the same day. Timon asks for his friends to help, but is refused. Angry at mankind's double nature, he leaves the city for the wilderness, and lives in a cave. Despite the efforts of several men to cheer his spirits, he dies\nB. \n\nC. after Cordelia has been captured and murdered. King Lear then dies of grief.\nD. is sudden power, and he finds it necessary to commit more and more murders to maintain power, believing himself invincible so long as he is bloody. Finally, the old king's son Malcolm besieges Macbeth's castle, and Macduff",
+    "Answer": "C"
+  },
+  {
+    "question_id": 323,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhich line contains the phrase 'ghost'? Provide the line number and exact text.\n\nA. Line Number: 8. Text: After killing Caesar, however, Brutus fails to convince the people that his cause was just.\nB. Line Number: 7. Text: Prince Hamlet is visited by his father's ghost and ordered to avenge his father's murder by killing King Claudius, his uncle.\nC. Line Number: 16. Text: after Cordelia has been captured and murdered. King Lear then dies of grief.\nD. Line Number: 8. Text: Prince Hamlet is visited by his father's ghost and ordered to avenge his father's murder by killing King Claudius, his uncle. After struggling with several questions, including whether what the ghost said is true and whether",
+    "Answer": "D"
+  },
+  {
+    "question_id": 326,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhat is written on the second-to-last non-empty line?\n\nA. after an attempt at political office turns sour, he is banished from Rome as a\nB. after Cordelia has been captured and murdered. King Lear then dies of grief.\nC. The Roman military leader Caius Martius, after leading Rome to several victories against the Volscians, returns home as a war hero with a new last name, Coriolanus, given for the city of Corioles which he conquered. However,\nD. the same day. Timon asks for his friends to help, but is refused. Angry at mankind's double nature, he leaves the city for the wilderness, and lives in a cave. Despite the efforts of several men to cheer his spirits, he dies",
+    "Answer": "D"
+  },
+  {
+    "question_id": 327,
+    "image_file_path": "input_images/qid301.png",
+    "Category": "Visual Text Understanding",
+    "Prompt": "Answer with one of the following options:\nWhat is the exact text of the first line after the 'King Lear' paragraph ends?\n\nA. full of hatred for humanity.\nB. No line follows the paragraph.\nC. King Lear\nD. (blank line)",
+    "Answer": "D"
+  }
+]

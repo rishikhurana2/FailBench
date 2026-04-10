@@ -31,6 +31,12 @@ def main():
         help="Optional output JSON file path"
     )
 
+    parser.add_argument(
+        "--benchmark",
+        default="../questions.json",
+        help="Input JSON file to benchmark the model. Default is questions.json.",
+    )
+
     args = parser.parse_args()
 
     benchmark_map = {
@@ -42,9 +48,10 @@ def main():
 
     benchmark_fn = benchmark_map[args.llm]
     model        = args.model
+    input_file   = args.benchmark
     output_file  = args.output
 
-    benchmark_fn(output_file=output_file, model=model)
+    benchmark_fn(output_file=output_file, model=model, questions_json_file=input_file)
 
 
 if __name__ == "__main__":

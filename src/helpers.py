@@ -5,8 +5,8 @@ import re
 import os
 from dotenv import load_dotenv
 
-def get_questions():
-    with open("../questions.json", "r", encoding="utf-8") as f:
+def get_questions(question_file_path : str):
+    with open(question_file_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 

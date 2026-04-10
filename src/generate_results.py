@@ -12,7 +12,7 @@ Outputs:
 - CSV summaries
 
 Example:
-    python generate_benchmark_graphs_stacked.py --input_dir ../Answers --output_dir ../Results
+    python generate_results.py --input_dir ../Answers --output_dir ../Results
 """
 
 from __future__ import annotations

@@ -1,0 +1,29 @@
+Model,Category_norm,Right,Wrong,n,right_pct,wrong_pct
+claude-sonnet-4-6,Commonsense,6.0,4.0,10.0,60.0,40.0
+claude-sonnet-4-6,Logic,16.0,4.0,20.0,80.0,20.0
+claude-sonnet-4-6,Nonsense,15.0,0.0,15.0,100.0,0.0
+claude-sonnet-4-6,Spatial Counting,3.0,12.0,15.0,20.0,80.0
+claude-sonnet-4-6,Spatial Relations,9.0,6.0,15.0,60.0,40.0
+claude-sonnet-4-6,Spatial Visualization,0.0,4.0,4.0,0.0,100.0
+claude-sonnet-4-6,Visual Text Understanding,12.0,9.0,21.0,57.14285714285714,42.857142857142854
+gemini-3-flash-preview,Commonsense,5.0,5.0,10.0,50.0,50.0
+gemini-3-flash-preview,Logic,17.0,2.0,19.0,89.47368421052632,10.526315789473683
+gemini-3-flash-preview,Nonsense,15.0,0.0,15.0,100.0,0.0
+gemini-3-flash-preview,Spatial Counting,7.0,8.0,15.0,46.666666666666664,53.333333333333336
+gemini-3-flash-preview,Spatial Relations,10.0,5.0,15.0,66.66666666666666,33.33333333333333
+gemini-3-flash-preview,Spatial Visualization,1.0,3.0,4.0,25.0,75.0
+gemini-3-flash-preview,Visual Text Understanding,18.0,3.0,21.0,85.71428571428571,14.285714285714285
+gpt-5.4,Commonsense,6.0,4.0,10.0,60.0,40.0
+gpt-5.4,Logic,15.0,5.0,20.0,75.0,25.0
+gpt-5.4,Nonsense,15.0,0.0,15.0,100.0,0.0
+gpt-5.4,Spatial Counting,0.0,15.0,15.0,0.0,100.0
+gpt-5.4,Spatial Relations,11.0,4.0,15.0,73.33333333333333,26.666666666666668
+gpt-5.4,Spatial Visualization,1.0,3.0,4.0,25.0,75.0
+gpt-5.4,Visual Text Understanding,12.0,9.0,21.0,57.14285714285714,42.857142857142854
+qwen-vl-plus,Commonsense,7.0,3.0,10.0,70.0,30.0
+qwen-vl-plus,Logic,9.0,11.0,20.0,45.0,55.00000000000001
+qwen-vl-plus,Nonsense,14.0,1.0,15.0,93.33333333333333,6.666666666666667
+qwen-vl-plus,Spatial Counting,10.0,5.0,15.0,66.66666666666666,33.33333333333333
+qwen-vl-plus,Spatial Relations,8.0,7.0,15.0,53.333333333333336,46.666666666666664
+qwen-vl-plus,Spatial Visualization,2.0,2.0,4.0,50.0,50.0
+qwen-vl-plus,Visual Text Understanding,6.0,15.0,21.0,28.57142857142857,71.42857142857143
