@@ -12,7 +12,7 @@ Outputs:
 - CSV summaries
 
 Example:
-    python generate_results.py --input_dir ../Answers --output_dir ../Results
+    python generate_results.py --input_dir ../Answers/Answers-FRQ --output_dir ../Results/Results-FRQ
 """
 
 from __future__ import annotations
@@ -26,9 +26,7 @@ from typing import Any
 import matplotlib.pyplot as plt
 import pandas as pd
 
-
 TOP_LEVEL_LIST_KEYS = ["results", "data", "items", "records"]
-
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate benchmark graphs from model JSON files.")
@@ -45,8 +43,6 @@ def parse_args() -> argparse.Namespace:
         help="Directory to save graphs and CSV summaries.",
     )
     return parser.parse_args()
-
-
 
 def load_json_records(path: Path) -> list[dict[str, Any]]:
     with path.open("r", encoding="utf-8") as f:
@@ -77,8 +73,6 @@ def load_json_records(path: Path) -> list[dict[str, Any]]:
         row["_row_index"] = i
         cleaned.append(row)
     return cleaned
-
-
 
 def normalize_correct(value: Any) -> bool | None:
     """Convert a Correct field to True/False, or None if missing/blank/unparseable."""
@@ -113,8 +107,6 @@ def normalize_correct(value: Any) -> bool | None:
 
     return None
 
-
-
 def normalize_category(cat: Any) -> str:
     if cat is None:
         return "Unknown"
@@ -145,15 +137,11 @@ def normalize_category(cat: Any) -> str:
 
     return cat
 
-
-
 def slugify(text: str) -> str:
     text = text.strip().lower()
     text = re.sub(r"[^a-z0-9]+", "_", text)
     text = re.sub(r"_+", "_", text).strip("_")
     return text or "untitled"
-
-
 
 def read_all_jsons(input_dir: Path) -> pd.DataFrame:
     json_files = sorted(input_dir.glob("*.json"))
@@ -198,8 +186,6 @@ def read_all_jsons(input_dir: Path) -> pd.DataFrame:
     df["Outcome"] = df["Correct_bool"].map(lambda x: "Right" if x else "Wrong")
     return df
 
-
-
 def ensure_dirs(base_output: Path) -> dict[str, Path]:
     dirs = {
         "base": base_output,
@@ -240,8 +226,6 @@ def save_overall_accuracy(df: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
     plt.close()
     return summary
 
-
-
 def save_category_accuracies(df: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
     summary = (
         df.groupby(["Category_norm", "Model"], as_index=False)["Correct_bool"]
@@ -272,8 +256,6 @@ def save_category_accuracies(df: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
         plt.close()
 
     return summary
-
-
 
 def save_model_stacked_bars(df: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
     summary = (
@@ -336,14 +318,10 @@ def save_model_stacked_bars(df: pd.DataFrame, out_dir: Path) -> pd.DataFrame:
 
     return pivot[["Model", "Category_norm", "Right", "Wrong", "n", "right_pct", "wrong_pct"]]
 
-
-
 def save_csvs(overall: pd.DataFrame, category: pd.DataFrame, stacked: pd.DataFrame, out_dir: Path) -> None:
     overall.to_csv(out_dir / "overall_accuracy_by_model.csv", index=False)
     category.to_csv(out_dir / "accuracy_by_model_and_category.csv", index=False)
     stacked.to_csv(out_dir / "stacked_breakdown_by_model_category_outcome.csv", index=False)
-
-
 
 def main() -> None:
     args = parse_args()

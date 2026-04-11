@@ -13,6 +13,13 @@ gemini-3-flash-preview,Spatial Counting,7.0,8.0,15.0,46.666666666666664,53.33333
 gemini-3-flash-preview,Spatial Relations,10.0,5.0,15.0,66.66666666666666,33.33333333333333
 gemini-3-flash-preview,Spatial Visualization,1.0,3.0,4.0,25.0,75.0
 gemini-3-flash-preview,Visual Text Understanding,18.0,3.0,21.0,85.71428571428571,14.285714285714285
+gemini-3.1-flash-lite-preview,Commonsense,3.0,7.0,10.0,30.0,70.0
+gemini-3.1-flash-lite-preview,Logic,14.0,6.0,20.0,70.0,30.0
+gemini-3.1-flash-lite-preview,Nonsense,15.0,0.0,15.0,100.0,0.0
+gemini-3.1-flash-lite-preview,Spatial Counting,9.0,6.0,15.0,60.0,40.0
+gemini-3.1-flash-lite-preview,Spatial Relations,11.0,4.0,15.0,73.33333333333333,26.666666666666668
+gemini-3.1-flash-lite-preview,Spatial Visualization,3.0,1.0,4.0,75.0,25.0
+gemini-3.1-flash-lite-preview,Visual Text Understanding,15.0,6.0,21.0,71.42857142857143,28.57142857142857
 gpt-5.4,Commonsense,6.0,4.0,10.0,60.0,40.0
 gpt-5.4,Logic,15.0,5.0,20.0,75.0,25.0
 gpt-5.4,Nonsense,15.0,0.0,15.0,100.0,0.0
